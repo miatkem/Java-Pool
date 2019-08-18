@@ -11,7 +11,7 @@ public class PoolGraphics extends JPanel{
     public PoolGraphics(Table tab)
     {
         pooltable=tab;
-        this.setSize(282, 373);
+        this.setPreferredSize(new Dimension(282, 373));
         this.setBackground(Color.WHITE);
         this.setFocusable(false); 
         addMouseMotionListener(pooltable.getStick());
