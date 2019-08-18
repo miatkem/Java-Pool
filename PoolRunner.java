@@ -14,12 +14,11 @@ public class PoolRunner{
         //set up main frame
         JFrame frame = new JFrame();
         frame.setResizable(false);
-        frame.setSize(392,402);
-        frame.setVisible(true);
         frame.setLocationRelativeTo(null);
         frame.add(game.getWindow());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        frame.pack();
+        frame.setVisible(true);
         game.start();
     }
     
